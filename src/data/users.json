@@ -1,5 +1,5 @@
 [
-    {
+{
         "id": 1,
         "nome": "Nome da empresa",
         "descricao": "uma breve descrição do que a empresa faz",
@@ -7,9 +7,9 @@
         "avatar": "https://hkhlakjshdfksh.com",
         "status": "ativo",
         "codigoAcesso": "985640",
-        "eventos": [
-            {
-                    "id": 1,
+        "eventos": [{
+
+                    "id": 0,
                     "img": "https://secure.meetupstatic.com/photos/event/2/3/f/f/highres_487569215.jpeg",
                     "status": "ativo",
                     "nomeEvento": "Bootcamp React",
@@ -18,8 +18,8 @@
                     "dataInicio": "08/02/2020",
                     "dataFim": "28/04/2020",
                     "participantes": [
-                        {
-                            "id": 1,
+{
+                           "id": 0,
                             "statusParticipação": "concluído",
                             "nome": "Nome do participante",
                             "contato": "11-98000-9999",
@@ -263,7 +263,7 @@
                 "avatar": "https://www.kjdshkds.com.br"
             }
         ]
-}
-        ]
     }
+        ]
+}
 ]

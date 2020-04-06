@@ -3,6 +3,7 @@
 .card-deck {
     position: relative;
     padding: 0px 50px 0px 50px;
+      
 }
 
 .title {
@@ -18,4 +19,3 @@
     font-size: small;
     font-family: 'Baloo Chettan 2', cursive;
 }
-
