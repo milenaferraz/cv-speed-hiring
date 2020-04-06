@@ -1,5 +1,5 @@
 
-import React, {Component, Children} from 'react';
+import React, {Component} from 'react';
 import firebase from '../../fireConection';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBody } from 'reactstrap';
 import './style.css'
@@ -20,7 +20,6 @@ export default class ListaEventos extends Component {
         snapshot.forEach((childItem)=> {
            state.eventos.push({
             key:childItem.key,
-            id: childItem.val().id,
             img: childItem.val().img,
             nomeEvento: childItem.val().nomeEvento,
             categoria: childItem.val().categoria,
@@ -41,9 +40,9 @@ export default class ListaEventos extends Component {
             <div>
               {this.state.eventos.map((e) => {
                 return(
-                  <div>
-                  <CardDeck className="card-deck">
-                  <Card key={e.id}>
+                <>
+                <CardDeck className="card-deck">
+                  <Card key={e.key}>
                       <CardImg top width="100%" src={e.img} alt="Card image cap" />
                       <CardBody>
                         <CardTitle className="title">{e.nomeEvento}</CardTitle>
@@ -55,7 +54,7 @@ export default class ListaEventos extends Component {
                     </Card>
               </CardDeck>
                   
-                  </div>
+              </>
                 );
               })}
             </div>

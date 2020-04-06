@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/database';
 import 'firebase/auth';
-import { render } from '@testing-library/react';
+
 
 
  // Your web app's Firebase configuration
